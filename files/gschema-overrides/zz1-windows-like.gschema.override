@@ -1,0 +1,6 @@
+[org/gnome/shell/extensions/aztaskbar]
+clock-position-in-panel='RIGHT'
+panel-location='BOTTOM'
+
+[org/gnome/shell/extensions/arcmenu]
+hide-overview-on-startup=true

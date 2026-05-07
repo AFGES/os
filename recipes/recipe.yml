@@ -17,11 +17,14 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: dnf
+  - type: gnome-extensions
     install:
-      packages:
-        - gnome-shell-extension-appindicator
-        - gnome-shell-extension-dash-to-panel
+      - ArcMenu
+      - App Icons Taskbar
+      - Desktop Icons NG (DING)
+      - AppIndicator and KStatusNotifierItem Support
+
+  - type: gschema-overrides
 
   # Sign published OCI image using repo cosign configuration.
   - type: signing
